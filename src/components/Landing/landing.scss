@@ -8,11 +8,30 @@
     padding-top: 0.5em;
 
     .image-wrapper {
-      width: 6.75rem;
-      height: 2rem;
+      width: 8.375rem;
+      height: 2.25rem;
 
       img {
         width: 100%;
+      }
+    }
+  }
+}
+
+.landing-card {
+  position: relative;
+  border-bottom: 8px solid #222;
+  margin-bottom: 0;
+  background: 0 0;
+  color: #fff;
+}
+
+@media only screen and (min-width: 550px) and (max-width: 949px) {
+  .landing-header {
+    .header-wrapper {
+      .image-wrapper {
+        width: 6.75rem;
+        height: 2rem;
       }
     }
   }

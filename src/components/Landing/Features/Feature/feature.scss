@@ -1,0 +1,35 @@
+.feature-card {
+  padding: 70px 45px;
+}
+
+.feature-card-container {
+  display: flex;
+  align-items: center;
+
+  .feature-text {
+    width: 52%;
+    height: 100%;
+    flex: 0 1 auto;
+    padding: 0 3rem 0 0;
+    z-index: 3;
+
+    h1 {
+      font-size: 3.125rem;
+      line-height: 1.1;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      font-size: 1.625rem;
+      font-weight: 400;
+    }
+  }
+  .feature-img {
+    width: 48%;
+    height: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+}

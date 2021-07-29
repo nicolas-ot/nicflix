@@ -1,7 +1,7 @@
 import './landing.scss';
 
 import Accordion from './Accordion/Accordion';
-import Feature from './Features/Feature';
+import Features from './Features/Features';
 import Footer from './Footer/Footer';
 import Header from './Header/Header';
 
@@ -23,7 +23,7 @@ const Landing = () => {
         </div>
       </header>
       <Accordion />
-      <Feature />
+      <Features />
       <Footer />
       <Header />
     </div>

@@ -6,7 +6,7 @@ interface ButtonProps {
 
 const Button: React.FC<ButtonProps> = ({ children }) => {
   return (
-    <button className={styles.button}>
+    <button className={styles.buttonMain}>
       <span>{children}</span>
     </button>
   );
