@@ -1,25 +1,58 @@
 import './accordion.scss';
 
+interface FaqListProps {
+  question: string;
+  answer: string;
+}
+
+const FaqList: React.FC<FaqListProps> = ({ question }) => {
+  return <div>{question}</div>;
+};
+
+const faq = [
+  {
+    question: 'What can I watch on Netflix?',
+    answer:
+      'Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.',
+  },
+  {
+    question: 'What can I watch on Netflix?',
+    answer:
+      'Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.',
+  },
+  {
+    question: 'What can I watch on Netflix?',
+    answer:
+      'Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.',
+  },
+  {
+    question: 'What can I watch on Netflix?',
+    answer:
+      'Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.',
+  },
+  {
+    question: 'What can I watch on Netflix?',
+    answer:
+      'Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.',
+  },
+  {
+    question: 'What can I watch on Netflix?',
+    answer:
+      'Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.',
+  },
+];
+
+const faqComponent = faq.map((faqList) => {
+  return <FaqList question={faqList.question} answer={faqList.answer} />;
+});
+
 const Accordion = () => {
   return (
     <div className='accordion landing-card'>
-      <div className='accordion-background'>
-        <div className='background-wrapper'>
-          <div className='image-gradient'></div>
-          <img
-            alt='background'
-            src={require('../../../assets/images/misc/background.jpg').default}
-          ></img>
-        </div>
-      </div>
-      <div className='accordion-text'>
-        <h1 className='accordion-title'>
-          Unlimited movies, TV shows, and more.
-        </h1>
-        <h2 className='accordion-subtitle'>Watch anywhere. Cancel anytime.</h2>
-        <form className='accordion-form'>
-          Ready to watch? Enter your email to create or restart your membership.
-        </form>
+      <div className='accordion-card-text'>
+        <h1 className='landing-title'>Frequently Asked Questions</h1>
+        <ul className='faq-list'>{faqComponent}</ul>
+        <form action='GET' className='email-form'></form>
       </div>
     </div>
   );

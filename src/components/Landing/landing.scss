@@ -18,12 +18,19 @@
   }
 }
 
+.landing-title {
+  font-size: 3.125rem;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+
 .landing-card {
   position: relative;
   border-bottom: 8px solid #222;
   margin-bottom: 0;
   background: 0 0;
   color: #fff;
+  padding: 70px 45px;
 }
 
 @media only screen and (min-width: 550px) and (max-width: 949px) {

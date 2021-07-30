@@ -1,9 +1,9 @@
 import './landing.scss';
 
-import Accordion from './Accordion/Accordion';
+import Header from './Header/Header';
 import Features from './Features/Features';
 import Footer from './Footer/Footer';
-import Header from './Header/Header';
+import Accordion from './Accordion/Accordion';
 
 // ELements
 import Button from '../../elements/Button/Button';
@@ -22,10 +22,10 @@ const Landing = () => {
           <Button>Sign In</Button>
         </div>
       </header>
-      <Accordion />
-      <Features />
-      <Footer />
       <Header />
+      <Features />
+      <Accordion />
+      <Footer />
     </div>
   );
 };

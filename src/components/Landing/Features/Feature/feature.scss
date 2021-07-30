@@ -1,16 +1,15 @@
-.feature-card {
-  padding: 70px 45px;
-}
-
 .feature-card-container {
   display: flex;
   align-items: center;
+
+  .padding-right {
+    padding-right: 3rem;
+  }
 
   .feature-text {
     width: 52%;
     height: 100%;
     flex: 0 1 auto;
-    padding: 0 3rem 0 0;
     z-index: 3;
 
     h1 {
@@ -24,12 +23,17 @@
       font-weight: 400;
     }
   }
-  .feature-img {
+
+  .feature-img-container {
     width: 48%;
     height: 100%;
 
     img {
       width: 100%;
     }
+  }
+
+  .feature-animation-container {
+    margin: -10% -5% -5% 0;
   }
 }
