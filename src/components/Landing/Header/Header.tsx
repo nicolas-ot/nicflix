@@ -1,5 +1,7 @@
 import './header.scss';
 
+import EmailForm from '../../../elements/EmailForm/EmailForm';
+
 const Header = () => {
   return (
     <div className='header landing-card'>
@@ -17,9 +19,7 @@ const Header = () => {
           Unlimited movies, TV shows, and more.
         </h1>
         <h2 className='header-subtitle'>Watch anywhere. Cancel anytime.</h2>
-        <form className='header-form'>
-          Ready to watch? Enter your email to create or restart your membership.
-        </form>
+        <EmailForm />
       </div>
     </div>
   );

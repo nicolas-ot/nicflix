@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import './accordion.scss';
 
+import EmailForm from '../../../elements/EmailForm/EmailForm';
+
 interface FaqListProps {
   question: string;
   answer: string;
@@ -105,7 +107,7 @@ const Accordion = () => {
       <div className='accordion-card-text'>
         <h1 className='landing-title'>Frequently Asked Questions</h1>
         <ul className='faq-list'>{faqComponent}</ul>
-        <form action='GET' className='email-form'></form>
+        <EmailForm />
       </div>
     </div>
   );
